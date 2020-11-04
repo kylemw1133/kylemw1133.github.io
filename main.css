@@ -78,10 +78,12 @@ li{
 
  nav {
      position: fixed;
-     top: 50px;
+     top: 0px;
      left: 5%;
-     line-height: 50px;
+     line-height: 100px;
      width:100%;
+     background-color: white;
+     z-index: 99;
  }
  nav a {
      font-weight: 500;
@@ -92,7 +94,7 @@ li{
  .nav-right {
      position: fixed;
      right: 5%;
-     top: 50px;
+     top: 0px;
  }
 
  .nav-right a{
@@ -139,8 +141,11 @@ li{
  */
 footer {
     position: fixed;
-    bottom: 50px;
-    right:5%;
+    bottom: 0px;
+    line-height: 50px;
+    width: 100%;
+    background-color: white;
+    z-index: 99;
 }
 
 .social {
@@ -148,13 +153,14 @@ footer {
     left:5%;
 }
 
-.social > a {
+.social  a {
     margin-right: 60px;
 }
-
-footer > p, .social > a {
-    font-weight: 500;
+footer p {
+    color: white;
 }
+
+
 /*
  * ─── MOTION ─────────────────────────────────────────────────────────────────────
  */
