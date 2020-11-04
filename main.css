@@ -28,20 +28,26 @@ html,body {
 }
 .section {
     min-width: 500px;
-    margin-bottom: 500px;
+    margin-bottom: 400px;
     height: 100%;
     padding-top: 20px;
 }
 h1{
     font-size:50px;
     font-weight: 900;
-    color: var(--main-black);
+    color: var(--main-blue);
 }
 h2{
-
-    font-size:30px;
+    margin-top: 80px;
+    font-size:25px;
     font-weight: 500;
     color: var(--main-black);
+}
+h3 {
+    font-size: 20px;
+    font-weight: 250;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 p{
     font-size: 17px;
@@ -51,6 +57,9 @@ a{
     font-size: 17px;
     color: var(--main-gray);
     text-decoration: none;
+}
+li{
+    list-style-position: inside;
 }
 .wrapper-content {
     width: 70%;
