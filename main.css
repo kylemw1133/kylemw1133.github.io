@@ -1,6 +1,11 @@
 /*
  * ─── GLOBAL ─────────────────────────────────────────────────────────────────────
  */
+ @media (max-width: 600px) {
+     .nav-right{
+         display: none;
+     }
+ }
 * {
         margin: 0;
         border: 0;
@@ -14,6 +19,7 @@
         --main-gray: #676666;
         --light-gray: #bab7b7;
         --main-blue: #289bd0;
+        font-size: 17px;
 }
 html {
     font-family: Avenir, sans-serif;
@@ -69,9 +75,7 @@ li{
  * ─── NAV ────────────────────────────────────────────────────────────────────────
  */
 
- .active {
-     color: green;
- }
+
  nav {
      position: fixed;
      top: 50px;
@@ -129,22 +133,6 @@ li{
 }
 .left p {
     max-width: 500px;
-}
-.skills {
-    float: right;
-}
-.skill-box {
-    background-color: white;
-    margin: 30px 0;
-    text-align: center;
-    width: 390px;
-    height: 120px;
-    line-height: 120px;
-    box-shadow: 0px 5px 20px 0px  rgba(0,0,0,0.6);
-    -moz-box-shadow: 0px 5px 20px 0px  rgba(0,0,0,0.6);
-    -webkit-box-shadow: 0px 5px 20px 0px  rgba(0,0,0,0.6);
-    -o-box-shadow: 0px 5px 20px 0px  rgba(0,0,0,0.6);
-    border-radius:25px;
 }
 /*
  * ─── FOOTER ─────────────────────────────────────────────────────────────────────
