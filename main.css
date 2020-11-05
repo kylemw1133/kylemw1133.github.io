@@ -5,6 +5,8 @@
      .nav-right{
          display: none;
      }
+} 
+@media screen and (max-width:460px){
      .wrapper-content {
          margin: 0 5%;
      }
@@ -12,8 +14,9 @@
          padding-top: 10px;
          padding-bottom: 100px;
      }
- }
-* {
+}
+ 
+ * {
         margin: 0;
         border: 0;
         padding:0;
@@ -39,10 +42,12 @@ html,body {
     margin: 0;
     padding:0;
 }
+
 .section {
     height: 100%;
     padding-top: 40px;
 }
+
 h1{
     font-size:50px;
     font-weight: 900;
@@ -72,11 +77,12 @@ a{
 li{
     list-style-position: inside;
 }
-.wrapper-content {
-    width: 70%;
-    margin: 0 auto;
+@media screen and (min-width:465px) {
+    .wrapper-content {
+        width: 70%;
+        margin: 0 auto;
+    }
 }
-
 img {
     margin-top: 50px;
     border-radius: 20%;
