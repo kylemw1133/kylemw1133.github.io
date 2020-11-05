@@ -1,7 +1,9 @@
 
 $(document).ready(function() {
-//$('#nav1').addClass("active");
 
+/*
+    Scroll features - upon specific nav click, scrolls to that section
+*/
 $("#nav1").click(function() {
     $('html, body').animate({
         scrollTop:        $("#one").offset().top-112
@@ -29,35 +31,46 @@ $("#nav4").click(function() {
     }, 1000);
  return false;
 });
-
+/*
+    Updating navbar link color feature - When on a specific page, navbar link
+    reflects this with changed color. Ue of Waypoints plugin to detect location. 
+*/
 $('#one').waypoint(function() {
     console.log('one');
-    document.getElementById("nav2").classList.remove("active");
-    document.getElementById("nav3").classList.remove("active");
-    document.getElementById("nav4").classList.remove("active");
+    document.querySelector('.active').classList.remove('active')
     document.getElementById("nav1").classList.add("active")
 }, {offset:'-5%'});
-$('#two').waypoint(function() {
-    console.log('two');
-    document.getElementById("nav1").classList.remove("active");
-    document.getElementById("nav3").classList.remove("active");
-    document.getElementById("nav4").classList.remove("active");
-    document.getElementById("nav2").classList.add("active")
-    
+
+$('#two').waypoint(function(direction) {
+    if(direction=='down') {
+        document.querySelector('.active').classList.remove('active')
+        document.getElementById("nav2").classList.add("active");
+    } 
 }, { offset: '20%'});
-$('#three').waypoint(function() {
-    console.log('three');
-    document.getElementById("nav1").classList.remove("active");
-    document.getElementById("nav2").classList.remove("active");
-    document.getElementById("nav4").classList.remove("active");
-    document.getElementById("nav3").classList.add("active")
-    
+$('#two').waypoint(function(direction) {
+    if(direction=='up') {
+        document.querySelector('.active').classList.remove('active')
+        document.getElementById("nav2").classList.add("active")
+    } 
+}, { offset: '-1%'});
+
+
+$('#three').waypoint(function(direction) {
+    if(direction=='down') {
+        document.querySelector('.active').classList.remove('active')
+        document.getElementById("nav3").classList.add("active")
+    }
 }, { offset: '20%'});
+
+$('#three').waypoint(function(direction) {
+    if(direction=='up') {
+        document.querySelector('.active').classList.remove('active')
+        document.getElementById("nav3").classList.add("active")
+    }
+}, { offset: '-1%'});
+
 $('#four').waypoint(function() {
-    console.log('four');
-    document.getElementById("nav1").classList.remove("active");
-    document.getElementById("nav2").classList.remove("active");
-    document.getElementById("nav3").classList.remove("active");
+    document.querySelector('.active').classList.remove('active')
     document.getElementById("nav4").classList.add("active")
     
 }, { offset: '20%'});
