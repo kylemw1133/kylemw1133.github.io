@@ -80,7 +80,7 @@ img {
  */
 
 
- nav {
+nav {
      position: fixed;
      top: 0px;
      left: 5%;
@@ -88,22 +88,24 @@ img {
      width:100%;
      background-color: white;
      z-index: 99;
- }
- nav a {
+}
+nav a {
      font-weight: 500;
      color: var(--main-gray);
- }
+}
 
-
- .nav-right {
+.active {
+    color: var(--main-blue);
+}
+.nav-right {
      position: fixed;
      right: 5%;
      top: 0px;
- }
+}
 
- .nav-right a{
+.nav-right a{
      margin-right: 60px;
- }
+}
 .nav-right a.selected {
     color: var(--main-blue)
 }
