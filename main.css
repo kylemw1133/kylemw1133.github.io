@@ -102,10 +102,27 @@ nav {
      background-color: white;
      z-index: 99;
 }
-nav a {
+.menu {
      font-weight: 500;
      color: var(--main-gray);
+     animation-duration: 3s;
+     animation-name: slideinnav;
+     animation-iteration-count: 1;
 }
+@keyframes slideinnav {
+    0% {
+        margin-right: 0%;
+      }
+      50% {
+        margin-left:10px
+      }
+      100% {
+        margin-left: 0%;
+      }
+}
+
+
+
 
 .active {
     color: var(--main-blue);
