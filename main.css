@@ -178,10 +178,10 @@ footer {
 }
 @media screen and (max-width: 460px) {
     .social a{
-        font-size: 11px;
+        font-size: 10px;
     }
     .social i {
-        font-size: 15px;
+        font-size: 10px;
     }
 } 
 .social  a {
