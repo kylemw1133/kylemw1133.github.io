@@ -171,7 +171,14 @@ footer {
     position: fixed;
     left:5%;
 }
-
+@media screen and (max-width: 460px) {
+    .social a{
+        display: none;
+    }
+    .social i {
+        padding-right: 100px;
+    }
+} 
 .social  a {
     margin-right: 60px;
 }
