@@ -36,7 +36,6 @@ $("#nav4").click(function() {
     reflects this with changed color. Ue of Waypoints plugin to detect location. 
 */
 $('#one').waypoint(function() {
-    console.log('one');
     document.querySelector('.active').classList.remove('active')
     document.getElementById("nav1").classList.add("active")
 }, {offset:'-5%'});
@@ -74,6 +73,16 @@ $('#four').waypoint(function() {
     document.getElementById("nav4").classList.add("active")
     
 }, { offset: '20%'});
+
+$('#emailLink').click(function(){
+    var textArea = document.createElement('textArea');
+    textArea.value = "williams.6838@osu.edu";
+    document.body.appendChild(textArea);
+    textArea.select();
+    document.execCommand('copy');
+    document.body.removeChild(textArea)
+})
+
 
 
 });
