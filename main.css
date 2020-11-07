@@ -187,6 +187,9 @@ footer {
     z-index: 99;
 }
 
+.icon:hover {
+    
+}
 .social {
     position: fixed;
     left:5%;
