@@ -99,15 +99,18 @@ li{
 nav {
      position: fixed;
      top: 0px;
-     left: 5%;
-     line-height: 100px;
+     line-height: 60px;
      width:100%;
      background-color: white;
      z-index: 99;
 }
+#logo {
+    margin-left: 5%;
+    color: var(--main-black);
+}
 .menu {
      font-weight: 500;
-     color: var(--main-gray);
+     color: var(--main-black);
      animation-duration: 3s;
      animation-name: slideinnav;
      animation-iteration-count: 1;
