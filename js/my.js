@@ -33,7 +33,7 @@ $("#nav4").click(function() {
 });
 /*
     Updating navbar link color feature - When on a specific page, navbar link
-    reflects this with changed color. Ue of Waypoints plugin to detect location. 
+    reflects this with changed color. Use of Waypoints plugin to detect location. 
 */
 $('#one').waypoint(function() {
     document.querySelector('.active').classList.remove('active')
@@ -74,15 +74,17 @@ $('#four').waypoint(function() {
     
 }, { offset: '20%'});
 
+/*
+    Copy email to clipboard with click of emailLink element
+*/
 $('#emailLink').click(function(){
     var textArea = document.createElement('textArea');
     textArea.value = "williams.6838@osu.edu";
     document.body.appendChild(textArea);
     textArea.select();
     document.execCommand('copy');
-    document.body.removeChild(textArea)
+    document.body.removeChild(textArea);
+    console.log($(".tooltiptext").html("Copied"));
 })
-
-
 
 });
